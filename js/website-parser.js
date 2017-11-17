@@ -36,13 +36,12 @@ export default class {
     while (true) {
       //When we don't have "no places avaliable" message, trying to add new visitor
       try {
-        let spb_option = this.driver.findElement(By.css('select#LocationId > option:nth-child(9)')).click()
+        let spb_option = this.driver.findElement(By.css('select#LocationId > option:nth-child(2)')).click()
 
         let error_element = this.driver.findElement(By.css('#LocationError'))
         await this.driver.wait(until.elementTextContains(error_element, "Нет доступных мест"), 3000)
 
       } catch (ex) {
-        console.log(ex)
         this.try_to_add_visitor();
       }
 
