@@ -4,7 +4,7 @@ Auto clicker for website.
 Main goal is to see when your registration has opened.
 
 ## USAGE
-Type ```yarn``` to install dependencies
+Type ```yarn``` to install dependencies.
 You need to install  dependencies to play-sound npm package!! 
 View details on https://github.com/shime/play-sound
 
