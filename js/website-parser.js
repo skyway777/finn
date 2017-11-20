@@ -29,7 +29,7 @@ export default class {
 
   async start(url) {
 
-    await this.driver.get('https://www.vfsvisaservicesrussia.com/Global-Appointment/Account')
+    await this.driver.get(url)
     await this.driver.wait(until.titleIs('VFS : Выбрать город'), 60000);
     await this.driver.wait(until.elementLocated(By.css('select#LocationId > option')), 3000)
 
